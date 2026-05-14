@@ -386,6 +386,12 @@ h1 {
   height: 34px;
 }
 
+.temp-label {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .cars-section {
   padding-top: 0;
 }
