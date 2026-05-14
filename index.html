@@ -12,6 +12,80 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-radio" viewBox="0 0 24 24">
+        <path d="M4.9 19h14.2" />
+        <path d="M6.2 15.5h11.6" />
+        <path d="M8 12h8" />
+        <path d="M10.2 8.5h3.6" />
+        <path d="M12 19V5" />
+      </symbol>
+      <symbol id="icon-thermometer" viewBox="0 0 24 24">
+        <path d="M14 14.8V5.5a4 4 0 0 0-8 0v9.3a6 6 0 1 0 8 0Z" />
+        <path d="M10 8v8" />
+        <path d="M10 18.5h.01" />
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3 19 6v5.5c0 4.3-2.8 7.5-7 9.5-4.2-2-7-5.2-7-9.5V6l7-3Z" />
+        <path d="M12 8v5" />
+        <path d="M12 16h.01" />
+      </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="m9 18-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Z" />
+        <path d="M9 3v15" />
+        <path d="M15 6v15" />
+      </symbol>
+      <symbol id="icon-languages" viewBox="0 0 24 24">
+        <path d="M5 5h8" />
+        <path d="M9 3v2" />
+        <path d="M4 11c3.8-.2 6.5-2.2 7.7-6" />
+        <path d="M6.5 8c1 1.8 2.5 3.1 4.5 4" />
+        <path d="M13 21l4-10 4 10" />
+        <path d="M14.5 17h5" />
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="4" />
+        <circle cx="12" cy="12" r="3.5" />
+        <path d="M16.8 7.2h.01" />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" />
+      </symbol>
+      <symbol id="icon-map-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24">
+        <path d="M21 12a8 8 0 0 1-8 8H7l-4 2 1.5-4.5A8 8 0 1 1 21 12Z" />
+      </symbol>
+      <symbol id="icon-search-check" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-3.5-3.5" />
+        <path d="m8 11 2 2 4-4" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3 2" />
+      </symbol>
+      <symbol id="icon-car" viewBox="0 0 24 24">
+        <path d="M5 15h14l-1.5-5.2A3 3 0 0 0 14.6 8H9.4a3 3 0 0 0-2.9 1.8L5 15Z" />
+        <path d="M4 15v3" />
+        <path d="M20 15v3" />
+        <circle cx="7" cy="18" r="1.5" />
+        <circle cx="17" cy="18" r="1.5" />
+      </symbol>
+      <symbol id="icon-eye" viewBox="0 0 24 24">
+        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+        <circle cx="12" cy="12" r="3" />
+      </symbol>
+      <symbol id="icon-wrench" viewBox="0 0 24 24">
+        <path d="M14.7 6.3a4 4 0 0 0 5 5L11 20a2.1 2.1 0 0 1-3-3l8.7-8.7a4 4 0 0 1-2-2Z" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+    </svg>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="AUTOHUB BC на початок">
         <span class="brand-mark" aria-hidden="true">
@@ -22,12 +96,13 @@
 
       <nav class="nav" aria-label="Головна навігація">
         <a href="#services">Послуги</a>
+        <a href="#cars">Авто</a>
         <a href="#process">Як це працює</a>
         <a href="#contacts">Контакти</a>
       </nav>
 
       <a class="header-phone" href="tel:+380962928349">
-        <span aria-hidden="true">☎</span>
+        <svg class="ui-icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
         Подзвонити
       </a>
     </header>
@@ -36,16 +111,22 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">Біла Церква · авто з США, Європи та Кореї</p>
-          <h1 id="hero-title">Адаптація авто під Україну без зайвого сервісного шуму</h1>
+          <h1 id="hero-title">Адаптація авто з США, Європи та Кореї під Україну в Білій Церкві</h1>
           <span class="title-line" aria-hidden="true"></span>
           <p class="lead">
-            Українська мова в меню, навігація, клімат у Цельсіях, парні
-            радіохвилі, прошивка SRS-блоків. Робимо імпортовані авто
-            зручними для щоденного користування в Україні.
+            Українське меню, Celsius замість Fahrenheit, парні FM-частоти,
+            навігація та SRS-блоки. Швидко пояснюємо, що можна зробити саме з
+            вашим авто.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="tel:+380962928349">Записатися</a>
-            <a class="button secondary" href="#services">Переглянути послуги</a>
+            <a class="button primary" href="https://www.instagram.com/autohub_bc" target="_blank" rel="noreferrer">
+              <svg class="ui-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+              Написати в Instagram
+            </a>
+            <a class="button secondary" href="tel:+380962928349">
+              <svg class="ui-icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+              Подзвонити майстру
+            </a>
           </div>
         </div>
 
@@ -58,15 +139,15 @@
 
         <div class="hero-badges" aria-label="Ключові послуги">
           <article>
-            <span aria-hidden="true">▣</span>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-languages"></use></svg>
             Українське меню
           </article>
           <article>
-            <span aria-hidden="true">°C</span>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-thermometer"></use></svg>
             Клімат у Цельсіях
           </article>
           <article>
-            <span aria-hidden="true">⌁</span>
+            <svg class="card-icon" aria-hidden="true"><use href="#icon-radio"></use></svg>
             Парні радіохвилі
           </article>
         </div>
@@ -80,30 +161,46 @@
 
         <div class="services-grid">
           <article class="service-card">
-            <span class="icon radio" aria-hidden="true"></span>
-            <h3>Парні радіохвилі</h3>
-            <p>Перепрограмування радіо на парні частоти FM для України.</p>
+            <span class="icon" aria-hidden="true"><svg><use href="#icon-radio"></use></svg></span>
+            <h3>FM-радіо під українські частоти</h3>
+            <p>Налаштування парних радіохвиль, щоб станції ловилися коректно</p>
           </article>
           <article class="service-card">
-            <span class="icon temp" aria-hidden="true"></span>
-            <h3>Клімат з Фаренгейту в Цельсій</h3>
-            <p>Переведення клімат-контролю та індикацій у градуси °C.</p>
+            <span class="icon" aria-hidden="true"><svg><use href="#icon-thermometer"></use></svg></span>
+            <h3>Клімат з Фаренгейт у Цельсій</h3>
+            <p>Переведення температури клімат-контролю у звичні °С</p>
           </article>
           <article class="service-card">
-            <span class="icon srs" aria-hidden="true"></span>
-            <h3>Прошивка блоку SRS</h3>
-            <p>Оновлення та адаптація SRS-блоків, видалення помилок.</p>
+            <span class="icon" aria-hidden="true"><svg><use href="#icon-shield"></use></svg></span>
+            <h3>SRS-блоки</h3>
+            <p>Робота з SRS-блоками після помилок, заміни або відновлення системи</p>
           </article>
           <article class="service-card">
-            <span class="icon map" aria-hidden="true"></span>
-            <h3>Мапа навігації</h3>
-            <p>Оновлення карт навігації та регіональні налаштування.</p>
+            <span class="icon" aria-hidden="true"><svg><use href="#icon-map"></use></svg></span>
+            <h3>Навігація та мапи</h3>
+            <p>Оновлення навігації, мап і регіональних налаштувань</p>
           </article>
           <article class="service-card">
-            <span class="icon ua" aria-hidden="true">UA</span>
+            <span class="icon" aria-hidden="true"><svg><use href="#icon-languages"></use></svg></span>
             <h3>Українізація авто</h3>
-            <p>Українська мова в меню, приладах та системних повідомленнях.</p>
+            <p>Зрозуміле меню, локалізація системи та адаптація авто під український ринок</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section cars-section" id="cars" aria-labelledby="cars-title">
+        <div class="section-heading">
+          <h2 id="cars-title">Для яких авто</h2>
+          <span class="title-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="cars-card">
+          <svg class="feature-icon" aria-hidden="true"><use href="#icon-car"></use></svg>
+          <p>
+            Працюємо з авто з США, Європи та Кореї: Lexus, Toyota, Ford, Honda,
+            Hyundai, Kia, BMW, Mercedes-Benz та іншими моделями. Напишіть модель
+            і рік авто — ми скажемо, що можна адаптувати.
+          </p>
         </div>
       </section>
 
@@ -115,75 +212,86 @@
 
         <div class="process-grid">
           <article class="process-step">
-            <span class="step-icon" aria-hidden="true">☎</span>
+            <span class="step-icon" aria-hidden="true"><svg><use href="#icon-message"></use></svg></span>
             <b>1</b>
-            <h3>Напишіть або зателефонуйте</h3>
-            <p>Зв'яжіться з нами у зручний для вас спосіб.</p>
+            <h3>Пишете модель і рік авто</h3>
+            <p>Надсилаєте базову інформацію про авто в Instagram або телефоном.</p>
           </article>
           <article class="process-step">
-            <span class="step-icon" aria-hidden="true">▰</span>
+            <span class="step-icon" aria-hidden="true"><svg><use href="#icon-search-check"></use></svg></span>
             <b>2</b>
-            <h3>Назвіть модель та рік авто</h3>
-            <p>Повідомте модель, рік та комплектацію авто.</p>
+            <h3>Ми перевіряємо, що можна зробити</h3>
+            <p>Пояснюємо доступні варіанти адаптації саме для вашої моделі.</p>
           </article>
           <article class="process-step">
-            <span class="step-icon" aria-hidden="true">◉</span>
+            <span class="step-icon" aria-hidden="true"><svg><use href="#icon-clock"></use></svg></span>
             <b>3</b>
-            <h3>Отримайте консультацію</h3>
-            <p>Майстер підбере потрібні послуги та скаже вартість і час робіт.</p>
+            <h3>Називаємо ціну та час</h3>
+            <p>Узгоджуємо вартість, тривалість роботи та зручний час візиту.</p>
           </article>
           <article class="process-step">
-            <span class="step-icon" aria-hidden="true">⌂</span>
+            <span class="step-icon" aria-hidden="true"><svg><use href="#icon-car"></use></svg></span>
             <b>4</b>
-            <h3>Приїжджайте на адаптацію</h3>
-            <p>Виконуємо роботи професійно та безпечно.</p>
+            <h3>Приїжджаєте на адаптацію</h3>
+            <p>Виконуємо погоджені зміни локально в Білій Церкві.</p>
           </article>
         </div>
       </section>
 
-      <section class="dark-band" aria-label="Переваги сервісу">
-        <article>
-          <span aria-hidden="true">◎</span>
-          <div>
-            <h2>Профільна спеціалізація</h2>
-            <p>Фокусуємося на електронних системах та адаптації авто.</p>
-          </div>
-        </article>
-        <article>
-          <span aria-hidden="true">▰</span>
-          <div>
-            <h2>Для авто з імпорту</h2>
-            <p>Працюємо з авто з США, Європи, Кореї та інших ринків.</p>
-          </div>
-        </article>
-        <article>
-          <span aria-hidden="true">⌖</span>
-          <div>
-            <h2>Локально в Білій Церкві</h2>
-            <p>Зручна локація, швидкий запис та чесний сервіс поруч.</p>
-          </div>
-        </article>
+      <section class="trust-section" aria-labelledby="trust-title">
+        <div class="trust-copy">
+          <p class="eyebrow">AUTOHUB BC</p>
+          <h2 id="trust-title">Чому нам довіряють</h2>
+          <span class="title-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="trust-grid">
+          <article>
+            <svg class="trust-icon" aria-hidden="true"><use href="#icon-eye"></use></svg>
+            <p>Реальні роботи можна переглянути в Instagram</p>
+          </article>
+          <article>
+            <svg class="trust-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+            <p>Працюємо локально в Білій Церкві</p>
+          </article>
+          <article>
+            <svg class="trust-icon" aria-hidden="true"><use href="#icon-wrench"></use></svg>
+            <p>Пояснюємо перед роботою, що саме буде змінено</p>
+          </article>
+          <article>
+            <svg class="trust-icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            <p>Без зайвого сервісного шуму — тільки потрібна адаптація</p>
+          </article>
+        </div>
+
+        <a class="button primary" href="https://www.instagram.com/autohub_bc" target="_blank" rel="noreferrer">
+          <svg class="ui-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+          Переглянути роботи
+        </a>
       </section>
 
       <section class="contact-section" id="contacts" aria-labelledby="contacts-title">
         <div class="contact-copy">
           <h2 id="contacts-title">Готові зробити ваше авто зручним для України?</h2>
           <span class="title-line" aria-hidden="true"></span>
-          <p>Зателефонуйте або напишіть нам, проконсультуємо та запишемо.</p>
-          <a class="button primary wide" href="tel:+380962928349">Подзвонити зараз</a>
+          <p>Напишіть модель і рік авто — підкажемо, які саме налаштування доступні.</p>
+          <a class="button primary wide" href="https://www.instagram.com/autohub_bc" target="_blank" rel="noreferrer">
+            <svg class="ui-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+            Написати в Instagram
+          </a>
         </div>
 
         <address class="contact-card">
           <a href="tel:+380962928349">
-            <span aria-hidden="true">☎</span>
+            <svg class="contact-icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
             096 292 8 349
           </a>
-          <a href="https://www.instagram.com/autohub_bc/" target="_blank" rel="noreferrer">
-            <span class="instagram-icon" aria-hidden="true"></span>
+          <a href="https://www.instagram.com/autohub_bc" target="_blank" rel="noreferrer">
+            <svg class="contact-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
             @autohub_bc
           </a>
           <span>
-            <span class="location-icon" aria-hidden="true"></span>
+            <svg class="contact-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
             Біла Церква
           </span>
         </address>
